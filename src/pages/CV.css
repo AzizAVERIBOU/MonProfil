@@ -1,0 +1,280 @@
+.cv {
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: #f8f9fa;
+}
+
+.cv-viewer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* En-tête simple */
+.cv-header-simple {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cv-intro {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+/* Aperçu du CV */
+.cv-preview {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.cv-preview-notice {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 10px;
+}
+
+.preview-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cv-preview-notice h3 {
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.cv-preview-notice p {
+  color: #718096;
+  margin: 0;
+}
+
+.cv-iframe-wrapper {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f7fafc;
+}
+
+.cv-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Boutons d'action */
+.cv-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.cv-action-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+}
+
+.cv-view-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.cv-view-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.cv-download-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* Contact rapide */
+.cv-contact-quick {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-quick-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f7fafc;
+}
+
+.contact-quick-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.contact-quick-header h3 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-quick-header p {
+  color: #718096;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.quick-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.quick-contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.quick-contact-card:hover {
+  background: white;
+  border-color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+}
+
+.quick-card-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.quick-card-icon svg {
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.quick-contact-card:hover .quick-card-icon svg {
+  transform: scale(1.1);
+}
+
+.quick-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.quick-card-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quick-card-value {
+  font-size: 0.95rem;
+  color: #2d3748;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-contact-card:hover .quick-card-value {
+  color: #667eea;
+}
+
+/* Responsive */
+@media print {
+  .cv {
+    padding: 0;
+  }
+
+  .cv-container {
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  .cv-download {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv {
+    padding: 1rem;
+  }
+
+  .cv-iframe-wrapper {
+    height: 400px;
+  }
+
+  .cv-actions {
+    flex-direction: column;
+  }
+
+  .cv-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-quick-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .quick-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quick-card-value {
+    white-space: normal;
+  }
+}
+
